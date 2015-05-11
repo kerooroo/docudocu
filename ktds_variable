@@ -1,5 +1,9 @@
-**변수 (Variable) : 하나의 값을 저장하는 저장공간 형식)
+**변수 (Variable) : 하나의 값을 저장하는 저장공간 
+형식) 기본DataType
 1. 선언 : 접근제어자 dataType 변수명;
+public int age;
+private boolean flag;
+char c;
 
 2. 사용
 
@@ -12,14 +16,15 @@
 ** 자료형 (Data Type)
 Data Type
 1. 기본DataType
-	- 논리형	: boolean	1 byte
-	- 문자형	: char			2
+	- 논리형	: boolean	1 byte	true, false 
+	- 문자형	: char			2 byte	'a', '1', '한' >> 0 'ab' >> x
+											특수문자 : \", \', \t, \n, \\
 	- 숫자형
-		- 정수형 : byte		1
-					short		2
-					int			4
-					long		8
-		- 실수형 : float		4
-					double	8
+		- 정수형 : byte		1 byte
+					short		2 byte
+					int			4 byte
+					long		8 byte
+		- 실수형 : float		4 byte
+					double	8 byte
 					
 2. 참조형DataType(Reference DataType) : object(class), 배열(Array)
