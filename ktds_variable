@@ -1,0 +1,25 @@
+**변수 (Variable) : 하나의 값을 저장하는 저장공간 형식)
+1. 선언 : 접근제어자 dataType 변수명;
+
+2. 사용
+
+** 접근제어자(Access Modifier)
+1. private : 자신의 클래스 안에서만 사용 가능.
+2. default(생략) : 같은 package 안에서는 public, package가 다르면 private
+3. protected : default와 같음. 단, 두 클래스간의 관계가 상속관계일 경우 package가 달라져도 public
+4. public : 제약없이 사용 가능.
+
+** 자료형 (Data Type)
+Data Type
+1. 기본DataType
+	- 논리형	: boolean	1 byte
+	- 문자형	: char			2
+	- 숫자형
+		- 정수형 : byte		1
+					short		2
+					int			4
+					long		8
+		- 실수형 : float		4
+					double	8
+					
+2. 참조형DataType(Reference DataType) : object(class), 배열(Array)
