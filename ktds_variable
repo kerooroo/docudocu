@@ -17,14 +17,14 @@ char c;
 Data Type
 1. 기본DataType
 	- 논리형	: boolean	1 byte	true, false 
-	- 문자형	: char			2 byte	'a', '1', '한' >> 0 'ab' >> x
-											특수문자 : \", \', \t, \n, \\
+	- 문자형	: char		2 byte	'a', '1', '한' >> 0 'ab' >> x
+						특수문자 : \", \', \t, \n, \\
 	- 숫자형
-		- 정수형 : byte		1 byte
-					short		2 byte
-					int			4 byte
-					long		8 byte
-		- 실수형 : float		4 byte
-					double	8 byte
+	- 정수형 : 	byte	1 byte
+			short	2 byte
+			int	4 byte
+			long	8 byte
+	- 실수형 : 	float	4 byte
+			double	8 byte
 					
 2. 참조형DataType(Reference DataType) : object(class), 배열(Array)
