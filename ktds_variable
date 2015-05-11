@@ -5,7 +5,15 @@ public int age;
 private boolean flag;
 char c;
 
-2. 사용
+2. 사용 : 변수명 = 값; (오른쪽의 값을 왼쪽의 변수에 대입해라)
+age = 30;
+flag = false;
+c = 'a';
+
+-----------------> 접근제어자 기본DataType 변수명 = 값;
+					public int age = 30;
+					private boolean flag = false;
+					char c = 'a';
 
 ** 접근제어자(Access Modifier)
 1. private : 자신의 클래스 안에서만 사용 가능.
@@ -17,14 +25,71 @@ char c;
 Data Type
 1. 기본DataType
 	- 논리형	: boolean	1 byte	true, false 
-	- 문자형	: char		2 byte	'a', '1', '한' >> 0 'ab' >> x
-						특수문자 : \", \', \t, \n, \\
+	- 문자형	: char			2 byte	'a', '1', '한' >> 0 'ab' >> x
+											특수문자 : \", \', \t, \n, \\
 	- 숫자형
-	- 정수형 : 	byte	1 byte
-			short	2 byte
-			int	4 byte
-			long	8 byte
-	- 실수형 : 	float	4 byte
-			double	8 byte
+		- 정수형 : byte		1 byte
+					short		2 byte
+					int			4 byte
+					long		8 byte
+		- 실수형 : float		4 byte
+					double	8 byte
 					
 2. 참조형DataType(Reference DataType) : object(class), 배열(Array)
+
+** 명명규칙
+1. 알파벳, 숫자, 한글(일반적사용X)
+2. Class : 대문자로 시작
+	변수, method : 소문자로 시작
+	숫자로 시작 X, 합성어의 경우 두번째 시작단어는 대문자
+	예)
+		class Car{
+			String carName;
+		}
+3. 특수문자는 사용불가(단, $와 _는 예외)
+4. 예약어(keyword)는 사용불가
+
+
+** 연산자(Operator)
+1. 단항연산자 : +, -, !
+++, -- : 1증가(감소)연산자
+변수++ : 선실행 후증가
+++변수 : 선증가 후실행
+
+int x = 10;
+System.out.println(++x); // 11
+System.out.println(x); // 11
+
+int x = 10;
+System.out.println(x++); // 10
+System.out.println(x); // 11
+
+2. 산술연산자 : + - * / %(나머지연산)
+
+3. 비교연산자 : > >= < <= == != >>> true, false
+
+4. 논리연산자 : && || >>> boolean 논리연산 boolean
+$$ t f    || t f
+t   t f		t  t t
+f   f f		f  t f
+ && 사용시 앞쪽에 false 인걸 놔두는게 프로그램상 좋다.(앞에서 false면 뒤는 체크하지 않으니까)
+ || 사용시 앞쪽에 true인걸 놔두는게 좋다.
+ 
+ 5. 삼항연산자
+ 조건 ? 값1 : 값2
+ 조건이 true면 값1
+ 		false면 값2
+ System.out.println(5 > 3  ? "크다" : "작다");
+ 		
+ 6. 대입연산자 : =, += -= *= /= %=
+변수 대입연산자 값
+
+int x = 10;
+x의 값을 1증가
+++x
+x++
+x = x + 1;
+x += 1;
+
+최우선연산자 -> ()
+최후연산자 -> 대입연산자
