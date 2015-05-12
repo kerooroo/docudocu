@@ -1,0 +1,49 @@
+** Class
+형식)
+접근제어자 : default(생략), public 만 생성가능하다. 
+접근제어자 class ClassName {
+
+	변수;
+	method(){}
+
+}
+
+** method() : 기능(function), 재사용
+형식)
+접근제어자 ReturnType methodName([args]){
+
+	변수, if, for, while, ....
+	
+	[return 값];
+}
+
+ReturnType : method의 실행 결과의 DataType
+					return 값이 없을 경우 : void
+					
+
+** object(객체) : 속성(변수), 기능(method)
+>> class는 객체를 생성하기 위한 틀이다.
+
+class ->  
+객체 -> 
+인스턴스 -> 
+
+
+ex)
+객체 : 자동차 Class Car
+속성 : 차이름 String carName;
+		차색상 String carColor;
+		제조사 String maker;
+		속도 int speed;
+		
+기능 : 가속 void speedUp()
+		감속 void speedDown()
+		정지 void stop()
+		
+클래스를 생성하면 메모리에 올려야 사용이 가능하다.
+static으로 선언하면 메모리에 올리지 않아도 사용가능.
+
+
+
+
+-- 클래스를 만들기전에 기능과 속성을 먼저 생각하고 만든다.
